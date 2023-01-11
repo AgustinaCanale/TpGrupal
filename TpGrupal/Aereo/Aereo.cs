@@ -8,12 +8,15 @@ namespace TpGrupal.Aereo
 {
     public abstract class Aereo
     {
-        public Areo(string color, string marca){
+        public Aereo(string color, string modelo, int capacidad){
             Color = color;
-            Marca = marca;
+            Modelo = modelo;
+            Capacidad = capacidad;
 
      }
         public string Color { get; set; }
-        public string Marca { get; set; }
+        public string Modelo { get; set; }
+
+        public int Capacidad { get; set; }
     }
 }
